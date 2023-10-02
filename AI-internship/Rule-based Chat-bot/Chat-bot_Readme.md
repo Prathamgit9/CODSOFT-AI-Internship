@@ -1,4 +1,4 @@
-#Chatbot README
+## Chatbot README
 
 Welcome to the Chatbot project! This simple Python chatbot is designed to engage in conversation and provide assistance in various ways. You can interact with it by typing messages, and it will respond accordingly based on predefined patterns. Here's a guide on how to use and understand the code:
 
