@@ -1,7 +1,7 @@
 import random
 import re
 
-# Define arrays of predefined responses
+# Defining arrays of predefined responses
 responses = {
     "greeting": [
         "Hello! I'm here to help. What can I assist you with today?",
@@ -51,7 +51,7 @@ responses = {
 
 # ... (the rest of your code remains the same)
 
-# Define a function to perform calculations
+# Defining a function to perform calculations
 def calculate_expression(expression):
     try:
         result = eval(expression)
@@ -59,12 +59,12 @@ def calculate_expression(expression):
     except:
         return None
 
-# Define a function to generate a response
+# Defining a function to generate a response
 def generate_response(user_input):
     # Convert user input to lowercase for case-insensitive matching
     user_input = user_input.lower()
 
-    # Check if the user input matches any predefined patterns
+    # Checking if the user input matches any predefined patterns
     if any(keyword in user_input for keyword in ["hello", "hi", "hey", "hola", "namaste"]):
         return random.choice(responses["greeting"])
     elif "name" in user_input:
@@ -72,7 +72,7 @@ def generate_response(user_input):
     elif "joke" in user_input:
         return random.choice(responses["joke"])
     elif "calculate" in user_input:
-        # Use regular expressions to extract and calculate expressions
+        # Using regular expressions to extract and calculate expressions
         match = re.search(r'calculate[^\d]*(.*)', user_input)
         if match:
             expression = match.group(1)
