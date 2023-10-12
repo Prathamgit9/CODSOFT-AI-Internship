@@ -44,10 +44,11 @@ Do you want to play again? (yes/no): no
 
 ## Requirements
 
-- Python 3.x
+- **Python 3.x**
 
 ## Author
 
-- Pratham Narang
+- **Pratham Narang**
+
 
 Feel free to fork this project, make improvements, or use it as a learning resource for AI development. Enjoy the game!
