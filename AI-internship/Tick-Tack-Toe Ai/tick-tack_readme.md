@@ -39,6 +39,7 @@ Enter your move (1-9): 5
    | O |  
 
 AI wins!
+
 Do you want to play again? (yes/no): no
 
 ## Requirements
