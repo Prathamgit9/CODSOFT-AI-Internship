@@ -11,7 +11,7 @@ responses = {
         "Good day! How can I assist you today?"
     ],
     "name": [
-        "I'm just a chatbot, but you can call me Chating_ai.",
+        "I'm just a chatbot, but you can call me Chatting_ai.",
         "I don't have a name, but you can call me anything you like.",
         "Names aren't really my thing, but you can address me as Chatbot."
     ],
