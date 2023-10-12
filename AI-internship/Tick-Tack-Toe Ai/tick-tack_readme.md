@@ -39,9 +39,7 @@ AI's move:
 ...
 
 AI wins!
-
 Do you want to play again? (yes/no): no
-
 
 ## Requirements
 
