@@ -23,20 +23,20 @@ This is a simple implementation of a Tic-Tac-Toe game where you can play against
 
 ## Example Gameplay
 
-| |
-| |
-| |
+```plaintext
+   |   |  
+---------
+   | X |  
+---------
+   |   |  
+
 
 Enter your move (1-9): 5
-| |
-| X |
-| |
-AI's move:
-| |
-| X |
-| O |
-
-...
+   |   |  
+---------
+   | X |  
+---------
+   | O |  
 
 AI wins!
 Do you want to play again? (yes/no): no
