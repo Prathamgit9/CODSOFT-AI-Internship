@@ -49,8 +49,6 @@ responses = {
     ]
 }
 
-# ... (the rest of your code remains the same)
-
 # Defining a function to perform calculations
 def calculate_expression(expression):
     try:
