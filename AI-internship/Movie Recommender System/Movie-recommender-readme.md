@@ -1,41 +1,40 @@
-Movie Recommendation System
-This README provides an overview of a movie recommendation system built using Python and the scikit-learn library. The system uses natural language processing techniques to recommend movies based on their similarity to a given movie.
+# Movie Recommendation System
 
-Dataset
-The system uses two datasets:
+This is a simple movie recommendation system created using Python and pandas.
 
-tmdb_5000_movies.csv: This dataset contains information about movies, including details like budget, genres, keywords, original language, and more.
-tmdb_5000_credits.csv: This dataset contains information about the cast and crew of the movies.
-Code Structure
-The code is structured as follows:
+## Dataset
 
-Data Loading: The code starts by importing necessary libraries, such as NumPy and Pandas. It loads the two datasets into Pandas DataFrames (movies and credits) from CSV files.
+We use two datasets: `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`. These datasets contain information about movies, including details such as budget, genres, keywords, cast, crew, and more.
 
-Data Preprocessing: The code then performs various data preprocessing steps, including:
+## Data Preprocessing
 
-Merging the movies and credits DataFrames based on the movie title.
-Cleaning and transforming the data, such as converting lists of genres, keywords, cast, and crew into more usable formats.
-Text Preprocessing: Further data preprocessing includes:
+We start by loading the datasets and merging them on the movie title. After cleaning the data, we extract relevant information from columns such as `genres`, `keywords`, `cast`, and `crew`. We also create a new column, `tags`, by combining several text columns.
 
-Lowercasing all text data.
-Stemming text data using the Porter Stemmer.
-Creating a new DataFrame (new_df) that contains the movie title and processed tags.
-Feature Extraction: Using Count Vectorization, the code extracts features from the processed tags.
+## Text Preprocessing
 
-Recommendation: The system uses cosine similarity to calculate the similarity between movies based on their tag vectors. It can recommend movies similar to a given movie by finding the most similar movies in the dataset.
+Text data in the `tags` column is preprocessed using the following steps:
 
-Movie Recommendation Function: The code defines a function, recommend(movie), which takes a movie title as input and recommends five similar movies based on the processed tags and cosine similarity.
+- Convert to lowercase.
+- Tokenization and stemming using NLTK's Porter Stemmer.
+- Count Vectorization with a maximum of 5000 features and English stop words.
 
-Usage
-To use this movie recommendation system, you can follow these steps:
+## Movie Recommendation
 
-Ensure you have the required libraries installed, such as NumPy, Pandas, scikit-learn, and NLTK.
+We calculate the cosine similarity between movies based on their tags. Then, we recommend movies similar to a given movie title.
 
-Load the provided datasets (tmdb_5000_movies.csv and tmdb_5000_credits.csv) or replace them with your own dataset.
+## Usage
 
-Execute the code, which preprocesses the data and builds the recommendation system.
+```python
+recommend('Avatar')
+This will recommend movies similar to 'Avatar'.
 
-Call the recommend(movie) function, providing the title of a movie for which you want recommendations. The function will return a list of recommended movies.
+## Results
+Here are some movie recommendations for 'Avatar':
 
-Example
-As an example, the code was tested with the movie 'Avatar', and it recommended the following
+Aliens vs Predator: Requiem
+Aliens
+Falcon Rising
+Independence Day
+Titan A.E.
+
+Feel free to modify and use this code for your own movie recommendation system.
