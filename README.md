@@ -6,3 +6,6 @@ The AI-internship folder contains:
 1) A .py file of the code
 2) A video in mp4 format showcasing the result
 3) Also a readme file describing the project
+
+ # License
+ [MIT License](License)
